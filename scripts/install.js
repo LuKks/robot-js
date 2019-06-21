@@ -82,7 +82,7 @@ var request = function (url, success, failure)
 	req.on ("response", function (res)
 	{
 		// Check if response is OK
-		if (res.statusCode === 200)
+		if (res.statusCode < 400)
 			success (res);
 
 		// Some unexpected response
