@@ -15,7 +15,7 @@
 
 var mFS     = require ("fs"    );
 var mCrypto = require ("crypto");
-var mHTTP   = require ("http"  );
+var mHTTPS   = require ("https"  );
 var mColors = require ("colors/safe");
 
 
@@ -120,7 +120,7 @@ var verifyFailure = function (details)
 var request = function (url, success, failure)
 {
 	// Attempt to get the URL
-	var req = mHTTP.get (url);
+	var req = mHTTPS.get (url);
 
 	// Whenever a response is received
 	req.on ("response", function (res)
