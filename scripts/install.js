@@ -25,7 +25,7 @@ var mColors = require ("colors/safe");
 
 ////////////////////////////////////////////////////////////////////////////////
 
-var REMOTE = "https://github.com/LuKks/robot-js-binaries/raw/gh-pages/addon/";
+var REMOTE = "https://raw.githubusercontent.com/LuKks/robot-js-binaries/gh-pages/addon/";
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -82,7 +82,7 @@ var request = function (url, success, failure)
 	req.on ("response", function (res)
 	{
 		// Check if response is OK
-		if (res.statusCode < 400)
+		if (res.statusCode < 300)
 			success (res);
 
 		// Some unexpected response
