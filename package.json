@@ -1,64 +1,45 @@
 {
-	"name"				: "robot-js",
-	"version"			: "2.1.0",
-	"robot"				: "2.0.0",
-	"license"			: "Zlib",
-	"main"				: "lib/robot.js",
-	"gypfile"			: true,
-
-	"description"		: "Native system automation for node.js",
-	"homepage"			: "http://getrobot.net",
-
-	"author":
-	{
-		"name"			: "David Krutsko",
-		"email"			: "dave@krutsko.net",
-		"url"			: "http://krutsko.net"
+	"name": "robot-js",
+	"version": "2.1.0",
+	"robot": "2.0.0",
+	"license": "Zlib",
+	"main": "lib/robot.js",
+	"gypfile": true,
+	"description": "Native system automation for node.js",
+	"homepage": "http://getrobot.net",
+	"author": {
+		"name": "David Krutsko",
+		"email": "dave@krutsko.net",
+		"url": "http://krutsko.net"
 	},
-
-	"repository":
-	{
-		"type"			: "git",
-		"url"			: "https://github.com/robot/robot-js.git"
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/robot/robot-js.git"
 	},
-
-	"bugs":
-	{
-		"url"			: "https://github.com/robot/robot-js/issues"
+	"bugs": {
+		"url": "https://github.com/robot/robot-js/issues"
 	},
-
-	"scripts":
-	{
-		"install"		: "node scripts/install.js || node-gyp rebuild",
-		"test"			: "node test/test.js types timer"
+	"scripts": {
+		"install": "node scripts/install.js || node-gyp rebuild",
+		"test": "node test/test.js types timer"
 	},
-
-	"config":
-	{
-		"verify"		: true
+	"config": {
+		"verify": true
 	},
-
-	"engines":
-	{
-		"node"			: "0.12 - 10"
+	"engines": {
+		"node": "0.12 - 10"
 	},
-
-	"os":
-	[
+	"os": [
 		"linux",
 		"darwin",
 		"win32"
 	],
-
-	"cpu":
-	[
+	"cpu": [
 		"arm",
 		"x64",
 		"ia32"
 	],
-
-	"keywords":
-	[
+	"keywords": [
 		"autoit",
 		"native",
 		"system",
@@ -77,17 +58,13 @@
 		"clipboard",
 		"keylogging"
 	],
-
-	"dependencies":
-	{
-		"colors"		: "~1.1",
-		"node-gyp"		: "~3.6"
+	"dependencies": {
+		"colors": "~1.1",
+		"node-gyp": "~3.6"
 	},
-
-	"devDependencies":
-	{
-		"sprintf-js"	: "~1.1",
-		"node-png"		: "~0.4",
-		"readline-sync"	: "~1.4"
+	"devDependencies": {
+		"sprintf-js": "~1.1",
+		"node-png": "~0.4",
+		"readline-sync": "~1.4"
 	}
 }
