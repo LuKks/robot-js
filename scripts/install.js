@@ -110,6 +110,8 @@ target.on ("error", function (err)
 	genericFailure (err.message);
 });
 
+console.log('downloading', SOURCE);
+
 // Attempt to download the binary
 request (SOURCE, function (source)
 {
